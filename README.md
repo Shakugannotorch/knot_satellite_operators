@@ -3,7 +3,7 @@
 
 > This repository is licensed under the terms of the GNU GPLv3 license.
 
-This repository provides the following satellite operators of knots, to be used with [SnapPy](https://snappy.computop.org)
+This repository provides the following satellite operators of knots, to be used with [SnapPy](https://snappy.computop.org) (required!) (and preferrably [within SageMath](https://snappy.computop.org/installing.html#sagemath))
     
 - ```whitehead_double(snappy_knot, framing = 0, do_simplify = False)``` 
     - which returns the Whitehead double of a given knot (as an instance of ```snappy.Link```).
@@ -13,10 +13,8 @@ This repository provides the following satellite operators of knots, to be used 
 The variable ```framing``` controls the frame on the input knot diagram, 
 in the way that it adds Reidemester I moves such that the writhe of the diagram is equal to the value of framing. 
 
-As an example, the following is the $(8,3)$-parallel of the $0$-framed trefoil drawn with
+As an example, the following is the $(8,3)$-parallel of the $0$-framed trefoil drawn with the following code:
 ````
-# SnapPy is assumed to have already been installed
-
 from parallel import * 
 
 parallel(8, 3, snappy.Link('3_1')).view()
