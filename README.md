@@ -1,4 +1,4 @@
-# Some satellite operators of knots
+# Satellite operators of knots
 > Warning: I believe it currently does not work for links with more than one components.
 
 This repository provides the following satellite operators of knots, to be used with [SnapPy](https://snappy.computop.org)
