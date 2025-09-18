@@ -27,6 +27,10 @@ def double_crossing():
 def arc_double_crossing(double_cross, arc_index):
     return [double_cross[arc_index][arc_index],double_cross[proceed_and_mod_4(arc_index)][arc_index]]
 
+"""
+The variable framing controls the frame on the knot diagram to be doubled, in the way that 
+it adds Reidemester I moves so that the writhe of the original diagram is equal to the value of framing. 
+"""
 def whitehead_double(knot,framing = 0,do_simplify = False):
     up = snappy.Crossing()
     down = snappy.Crossing()

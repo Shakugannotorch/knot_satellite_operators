@@ -67,7 +67,7 @@ def connect_multi_crossings(multi_cross_1,arc_index_1,multi_cross_2,arc_index_2)
 
 
 # n can be negative to reverse the direction of twist
-def parallel(m, n, knot,framing = 0,do_simplify = False):
+def parallel(m, n, knot, framing = 0,do_simplify = False):
     assert n != 0
     
     parallel_twist = [[snappy.Crossing() for i in range(m-1)] for j in range(abs(n))]
