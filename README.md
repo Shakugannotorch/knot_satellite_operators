@@ -1,5 +1,7 @@
 # Satellite operators of knots
-> Warning: I believe it currently does not work for links with more than one components.
+> Warning: it currently does not work for links with more than one components.
+
+> This repository is licensed under the terms of the GNU GPLv3 license.
 
 This repository provides the following satellite operators of knots, to be used with [SnapPy](https://snappy.computop.org)
     
@@ -13,6 +15,10 @@ in the way that it adds Reidemester I moves such that the writhe of the diagram 
 
 As an example, the following is the $(8,3)$-parallel of the $0$-framed trefoil drawn with
 ````
+# SnapPy is assumed to have already been installed
+
+from parallel import * 
+
 parallel(8, 3, snappy.Link('3_1')).view()
 ````
 
